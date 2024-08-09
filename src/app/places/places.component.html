@@ -1,0 +1,13 @@
+<div class="carousel-container">
+    <div class="carousel">
+      <app-card
+        *ngFor="let card of cards"
+        (click)="navigate(card.route)"
+        [imageSrc]="card.imageSrc"
+        [title]="card.title"
+        [description]="card.description"
+        [loadingMessage]="card.loadingMessage">
+      </app-card>
+    </div>
+  </div>
+  
